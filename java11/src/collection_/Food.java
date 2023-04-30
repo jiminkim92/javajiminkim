@@ -68,31 +68,21 @@ class FoodList{
 		}
 	}
 	
-	public void deleteFood(String food_name) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setFood(String food_name, String after, int food_price) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void addFood(String food_name, int food_price) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void addFood() {
-		
+	public void addFood(String a_name, int a_price) {
+		name.add(a_name);
+		price.add(a_price);
 	}
 	
-	public void setFood() {
-		
+	public void setFood(String a_before, String a_after, int a_price) {
+		int number = name.indexOf(a_before);
+		name.set(number, a_after);
+		price.set(number, a_price);
 	}
 	
-	public void deleteFood() {
-		
+	public void deleteFood(String a_name) {
+		int number = name.indexOf(a_name);
+		name.remove(number);
+		price.remove(number);
 	}
 	
 	public void showAll() {
