@@ -25,7 +25,7 @@ class MyQuery{
 	private static final String DBURL = "jdbc:mariadb://127.0.0.1:3307/company";
 	// "jdbc:mysql://IP주소:포트번호/스키마이름"
 	
-	// 생성자 (라이브러리 로드)
+	// 생성자 (라이브러리 로드) 
 	public MyQuery() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");			// com.mysql.cj.jdbc.Driver
